@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex & Grid</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            text-align: center;
+            padding: 20px;
+        }
+        .flex-container{
+            display: flex;
+            background-color: lightskyblue;
+            padding: 20px;
+            justify-content: space-evenly;
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            background-color: blueviolet;
+            justify-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+      <div class="box"> Flex itme-1</div>
+      <div class="box"> Flex itme-2</div>
+      <div class="box"> Flex itme-3</div>
+    </div>
+
+    <h1> Grid Property</h1>
+    <div class="grid-container">
+        <div class="box"> Grid itme-1</div>
+        <div class="box"> Grid itme-2</div>
+        <div class="box"> Grid itme-3</div>
+        <div class="box"> Grid itme-4</div>
+    </div>
+</body>
+</html>
